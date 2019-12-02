@@ -18,7 +18,7 @@ module.exports = function(layoutData, opts) {
   // 事件方法名称转换
   const EVENT_NAME_MAP = {
     init: 'mounted',
-    destroy: 'beforeDestroy'
+    destroy: 'destroyed'
   };
 
   // 事件绑定名称转换
@@ -310,7 +310,7 @@ module.exports = function(layoutData, opts) {
           }
       
           if (this.props.urls.get) {
-            this.get(this.props.urls.get).then(resp => {
+            this.$axios.get(this.props.urls.get).then(resp => {
               // 以下兼容Pigx和Loopback生成的接口
               if (resp.data && resp.data.records) {
                 this.data = resp.data.records;
@@ -325,7 +325,7 @@ module.exports = function(layoutData, opts) {
       );
       result = result.concat(
         _line('export default {', { indent: { tab: indent } }),
-        _line('name: "DvcComponent",', { indent: { tab: indent + 1 } }),
+        _line('name: "HmJeecgComponent",', { indent: { tab: indent + 1 } }),
         propsScript,
         dataFunctionScript,
         mountedFunctionScript,
