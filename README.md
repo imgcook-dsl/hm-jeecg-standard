@@ -1,5 +1,7 @@
 # 毫末科技Jeecg DSL
 
+> 官网：[https://haomo-tech.com](https://haomo-tech.com)
+
 > 作者：胡小根
 
 > 邮箱：hxg@haomo-studio.com
@@ -22,8 +24,13 @@
 ```bash
 # 安装和配置
 cnpm install -g @imgcook/cli
+
+# 安装毫末的组件替换插件
+imgcook install @imgcook/hm-replace-component
+
 imgcook config ls
 imgcook config edit
+# 将dsl修改为182。且将@imgcook/hm-replace-component插件加为第一个插件
 ```
 
 ```bash
