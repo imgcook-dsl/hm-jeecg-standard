@@ -6,7 +6,6 @@
 
 > 邮箱：hxg@haomo-studio.com
 
-
 ## 安装和使用
 
 注意：node采用10.17.0版本（经测试）。请使用n或者nvm管理不同版本的node。
